@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607d8b</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="primary_light">#CFD8DC</color>
+    <color name="colorAccent">#448AFF</color>
+    <color name="white">#ffffff</color>
+    <color name="accept">#09b300</color>
+    <color name="cancel">#a60008</color>
+    <color name="orange">#ff4800</color>
+</resources>

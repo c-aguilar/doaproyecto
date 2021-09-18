@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Routes">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/picking_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_corner_btn"
+                android:drawableLeft="@drawable/cart_put"
+                android:onClick="StartCart"
+                android:text="Surtir Carro"
+                android:textColor="@color/primary_light"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/prototypes_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_corner_btn"
+                android:drawableLeft="@drawable/car"
+                android:onClick="Prototypes"
+                android:text="Prototipos"
+                android:textColor="@color/primary_light"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/critical_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_corner_btn"
+                android:drawableLeft="@drawable/warning"
+                android:onClick="Critical"
+                android:text="Descontar Critico"
+                android:textColor="@color/primary_light"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/tapes_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_corner_btn"
+                android:drawableLeft="@drawable/tape"
+                android:onClick="Tapes"
+                android:text="Surtido de Tapes"
+                android:textColor="@color/primary_light"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LabelingActivity"
+    tools:showIn="@layout/activity_labeling"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/primary_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginBottom="15dp">
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:text="Total:"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/counter_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:text="100"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:text="Ultimo escaneo:"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_marginStart="35dp"/>
+        <TextView
+            android:id="@+id/last_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:text="M4087035"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/partnumber_txt"
+        android:minWidth="190dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_edittext"
+        android:hint="Escanea el NP"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/quantity_txt"
+        android:minWidth="190dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_edittext"
+        android:hint="Escanea la Cantidad"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginBottom="15dp">
+        <Spinner
+            android:id="@+id/uom_spr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/containers_spr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/lot_txt"
+        android:minWidth="190dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_edittext"
+        android:hint="Lote"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/expiration_txt"
+        android:minWidth="190dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_edittext"
+        android:hint="Fecha de Expiracion"
+        android:inputType="date"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Switch
+        android:id="@+id/expiration_swh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sin fecha de expiracion"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_corner_btn"
+        android:drawableLeft="@drawable/diskette"
+        android:onClick="Save"
+        android:text="Guardar"
+        android:textColor="@color/primary_light"
+        android:textSize="24sp" />
+
+</android.widget.LinearLayout>

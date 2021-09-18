@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".FindActivity"
+    tools:showIn="@layout/activity_find"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/primary_light">
+
+    <EditText
+        android:id="@+id/partnumber_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="No. de Parte"
+        android:background="@drawable/round_edittext"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/local_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/round_edittext">
+        <ListView
+            android:id="@+id/items_vw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"/>
+
+
+
+    </LinearLayout>
+
+</android.widget.LinearLayout>

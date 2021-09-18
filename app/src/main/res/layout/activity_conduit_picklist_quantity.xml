@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConduitPicklistQuantityActivity"
+    android:orientation="vertical"
+    android:background="@color/primary_light"
+
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+        <Button
+            android:id="@+id/q5_btn"
+            android:text="5"
+            style="@style/QuantityButton"/>
+        <Button
+            android:id="@+id/q10_btn"
+            android:text="10"
+            style="@style/QuantityButton"/>
+        <Button
+            android:id="@+id/q20_btn"
+            android:text="20"
+            style="@style/QuantityButton"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+        <Button
+            android:id="@+id/q30_btn"
+            android:text="30"
+            style="@style/QuantityButton"/>
+        <Button
+            android:id="@+id/q50_btn"
+            android:text="50"
+            style="@style/QuantityButton"/>
+        <Button
+            android:id="@+id/q70_btn"
+            android:text="70"
+            style="@style/QuantityButton"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp">
+        <Button
+            android:id="@+id/q100_btn"
+            android:text="100"
+            style="@style/QuantityButton"/>
+        <Button
+            android:id="@+id/q150_btn"
+            android:text="150"
+            style="@style/QuantityButton"/>
+        <Button
+            android:id="@+id/q200_btn"
+            android:text="200"
+            style="@style/QuantityButton"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/quantity_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/round_edittext"
+        android:hint="Ingresa la cantidad"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/round_button_cancel"
+            android:onClick="Cancel"
+            android:text="Cancelar"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button_accept"
+            android:onClick="Discount"
+            android:text="Confirmar"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

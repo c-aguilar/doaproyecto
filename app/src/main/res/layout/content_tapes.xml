@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/primary_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <EditText
+        android:id="@+id/board_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_edittext"
+        android:ems="10"
+        android:hint="Escanea el Tablero"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/badge_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_edittext"
+        android:ems="10"
+        android:hint="Escanea el Gafete"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/serial_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_edittext"
+        android:ems="10"
+        android:hint="Escanea la Serie"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/quantity_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_edittext"
+        android:hint="Ingresa la cantidad"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/round_button_cancel"
+            android:onClick="Cancel"
+            android:text="Cancelar"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button_accept"
+            android:onClick="Discount"
+            android:text="Confirmar"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</android.widget.LinearLayout>

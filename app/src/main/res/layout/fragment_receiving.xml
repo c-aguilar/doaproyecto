@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Receiving">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/picking_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_corner_btn"
+                android:drawableLeft="@drawable/barcode"
+
+                android:text="Generar Etiquetas"
+                android:textColor="@color/primary_light"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/prototypes_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_corner_btn"
+                android:drawableLeft="@drawable/printer"
+
+                android:text="Imprimir"
+                android:textColor="@color/primary_light"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/quality_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_corner_btn"
+                android:drawableLeft="@drawable/warning"
+
+                android:text="Entregar a Calidad"
+                android:textColor="@color/primary_light"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/partial_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_corner_btn"
+                android:drawableLeft="@drawable/box_front_open_hand"
+
+                android:text="Parcial desde Tracker"
+                android:textColor="@color/primary_light"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/delete_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_corner_btn"
+                android:drawableLeft="@drawable/delete_package"
+
+                android:text="Eliminar Etiquetas"
+                android:textColor="@color/primary_light"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

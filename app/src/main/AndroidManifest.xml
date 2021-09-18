@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mz23zx.deltaerpddrapk">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LabelingActivity"
+            android:label="@string/title_activity_labeling"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ConduitPicklistQuantityActivity" />
+        <activity
+            android:name=".TapesActivity"
+            android:label="@string/title_activity_tapes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScanAudit"
+            android:label="@string/title_activity_scan_audit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PicklistConduits"
+            android:label="@string/title_activity_picklist_conduits"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OptionsActivity"
+            android:label="@string/title_activity_options"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Picking"
+            android:label="@string/title_activity_picking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CriticalActivity"
+            android:label="@string/title_activity_critical"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name=".OpenSerial"
+            android:label="@string/title_activity_open_serial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EmptySerial"
+            android:label="@string/title_activity_empty_serial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Prototypes"
+            android:label="@string/title_activity_protypes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScanCart"
+            android:label="@string/title_activity_scan_cart"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FindActivity"
+            android:label="@string/title_activity_find"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SerialAudit"
+            android:label="@string/title_activity_serial_audit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Samples"
+            android:label="@string/title_activity_samples"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StoreActivity"
+            android:label="@string/title_activity_store"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChangeLocationActivity"
+            android:label="@string/title_activity_change_location"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LinkAndOpenActivity"
+            android:label="@string/title_activity_link_and_open"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
